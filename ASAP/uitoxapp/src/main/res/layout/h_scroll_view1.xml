@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border_bottom"
+    android:id="@+id/hScrollView"
+    android:layout_below="@+id/relativeLayout">
+
+    <!-- 3個區塊的圖要平均滿版 -->
+    <include
+        layout="@layout/item_list_block1" />
+    <include
+        layout="@layout/item_list_block1" />
+    <include
+        layout="@layout/item_list_block1" />
+
+</LinearLayout>
+
+

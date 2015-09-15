@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:background="@color/bg1Color"
+    >
+    <TextView
+        android:text="vlume"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:id="@+id/index_ontime_text1"
+        android:textAppearance="@style/ut_body1"
+        android:textColor="@color/primaryColor"
+        android:layout_gravity="left|center_vertical"
+        android:layout_marginRight="16dp"
+        android:paddingRight="16dp"
+        android:background="@drawable/border_right"
+        android:textColorHighlight="@color/primaryColor"
+        android:textColorHint="@color/primaryColor"/>
+    <TextView
+        android:text="price"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:id="@+id/index_ontime_text2"
+        android:textAppearance="@style/ut_body1"
+        android:textColor="@color/thirdColor"
+        android:layout_gravity="left|center_vertical"
+        android:layout_marginRight="16dp"
+        android:paddingRight="16dp"
+        android:background="@drawable/border_right"
+        android:textColorHighlight="@color/primaryColor"
+        android:textColorHint="@color/primaryColor"/>
+</LinearLayout>
+
+
+
+

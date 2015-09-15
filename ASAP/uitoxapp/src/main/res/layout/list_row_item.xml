@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/bg3Color">
+
+    <RelativeLayout
+        android:id="@+id/ilistBlock3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="12dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:id="@+id/ProductImage"
+            android:layout_marginRight="16dp"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/ProductImage"
+            android:layout_toEndOf="@+id/ProductImage"
+            android:layout_alignBottom="@+id/ProductImage"
+            android:layout_alignTop="@+id/ProductImage">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textAppearance="@style/ut_subheader"
+                android:textColor="@color/secondaryColor"
+                android:text="商品名稱"
+                android:id="@+id/ProductName"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="5dp"
+                android:lineSpacingExtra="1dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:textAppearance="@style/ut_caption"
+                android:textColor="@color/thirdColor"
+                android:text="商品特色"
+                android:layout_below="@id/ProductName"
+                android:id="@+id/ProductDesc" />
+
+            <!-- 要加刪除線 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/ut_caption"
+                android:text="$9,999"
+                android:layout_marginBottom="2dp"
+                android:id="@+id/ProductPriceOg"
+                android:textColor="@color/thirdColor"
+                android:layout_below="@id/ProductDesc" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/ut_body2"
+                android:layout_marginTop="3dp"
+                android:text="$8,888"
+                android:id="@+id/ProductPrice"
+                android:textColor="@color/primaryColor"
+                android:layout_below="@id/ProductPriceOg" />
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:textAppearance="@style/ut_body2"
+                android:textColor="@color/buttonColor"
+                android:text="@string/buytxt_addCart"
+                android:background="@drawable/button_bg1"
+                android:layout_alignTop="@+id/ProductPriceOg"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:paddingTop="16dp"-->
+        <!--android:paddingBottom="16dp"-->
+        <!--android:paddingLeft="16dp"-->
+        <!--android:layout_below="@+id/ilistBlock3"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true">-->
+        <!--<FrameLayout-->
+            <!--android:layout_width="120dp"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:layout_marginRight="16dp"-->
+            <!--android:id="@+id/frameLayout2">-->
+        <!--</FrameLayout>-->
+        <!--<FrameLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1.5dp"-->
+            <!--android:background="@drawable/border_bottom"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_toRightOf="@+id/frameLayout2"-->
+            <!--android:layout_toEndOf="@+id/frameLayout2">-->
+        <!--</FrameLayout>-->
+
+    <!--</RelativeLayout>-->
+</RelativeLayout>

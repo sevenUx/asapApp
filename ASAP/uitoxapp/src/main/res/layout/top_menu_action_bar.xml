@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/bg3Color">
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:id="@+id/btnBack"
+        android:src="@drawable/ic_arrow_back_24dp"
+        android:background="@color/bg3Color"
+        android:layout_alignTop="@+id/txtTitle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:id="@+id/btnCategory"
+        android:src="@drawable/ic_menu_active_24dp"
+        android:layout_alignTop="@+id/btnBack"
+        android:layout_toRightOf="@+id/btnBack"
+        android:layout_toEndOf="@+id/btnBack"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:background="@color/bg3Color"/>
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:id="@+id/btnSearch"
+        android:src="@drawable/ic_search_24dp"
+        android:background="@color/bg3Color"
+        android:layout_alignTop="@+id/btnShoppingCar"
+        android:layout_toRightOf="@+id/txtTitle"
+        android:layout_toEndOf="@+id/txtTitle"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp" />
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:id="@+id/btnShoppingCar"
+        android:src="@drawable/ic_shopping_cart_active_24dp"
+        android:layout_alignTop="@+id/btnBack"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="23dp"
+        android:layout_marginEnd="23dp"
+        android:background="@color/bg3Color"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="PageName"
+        android:id="@+id/txtTitle"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg1Color">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="32dp"
+        android:paddingBottom="32dp"
+        android:gravity="top|center">
+        <TextView
+            android:text="很抱歉\n\n搜尋不到相關的商品及資訊！"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/ut_title"
+            android:textColor="@color/thirdColor"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textStyle="normal" />
+    </RelativeLayout>
+
+</LinearLayout>

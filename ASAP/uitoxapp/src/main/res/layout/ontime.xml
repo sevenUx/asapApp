@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg1Color">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:id="@+id/ontime_date"
+        android:gravity="left">
+        <TextView
+            android:text="11/27 (Fri)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ontime_date_txt"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentStart="false"
+            android:layout_alignWithParentIfMissing="false"
+            android:textAppearance="@style/ut_title"
+            android:textColor="@color/secondaryColor"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/item_list_block4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg3Color"
+        android:paddingTop="16dp"
+        android:elevation="2dp">
+        <include
+            layout="@layout/item_list3"
+            android:id="@+id/item_list2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+</LinearLayout>

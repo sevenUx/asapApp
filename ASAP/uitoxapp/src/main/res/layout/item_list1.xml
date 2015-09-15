@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/border_bottom">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:id="@+id/listBlock1"
+        android:gravity="left">
+        <TextView
+            android:text="Japan item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listTextTitle1"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentStart="false"
+            android:layout_alignWithParentIfMissing="false"
+            android:layout_centerVertical="true"
+            android:textAppearance="@style/ut_body1"
+            android:textColor="@color/thirdColor" />
+    </RelativeLayout>
+
+    <!-- 圖片的寬要平均滿版 -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ilist_block1_1"
+        android:layout_below="@+id/listBlock1">
+        <include
+            layout="@layout/item_list_block2" />
+        <include
+            layout="@layout/item_list_block2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ilist_block1_2"
+        android:layout_below="@+id/ilist_block1_1">
+        <include
+            layout="@layout/item_list_block2" />
+        <include
+            layout="@layout/item_list_block2" />
+    </LinearLayout>
+
+
+</RelativeLayout>

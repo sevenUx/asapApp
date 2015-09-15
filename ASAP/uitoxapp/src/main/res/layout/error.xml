@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg1Color">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="32dp"
+        android:paddingBottom="32dp"
+        android:gravity="top|center">
+        <TextView
+            android:text="抱歉，找不到網頁了"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/ut_title"
+            android:textColor="@color/thirdColor"
+            android:gravity="center"
+            android:textStyle="normal"
+            android:layout_marginBottom="35dp"/>
+
+        <TextView
+            android:text="商品目前已下架或暫不販售，歡迎選購其他商品。
+此頁面可能暫時出現故障。
+暫時沒有網路訊號或者行動網路連線。"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/ut_body1"
+            android:textColor="@color/thirdColor"
+            android:gravity="center"
+            android:textStyle="normal"
+            android:lineSpacingExtra="10dp"/>
+    </LinearLayout>
+
+</LinearLayout>

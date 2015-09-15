@@ -1,0 +1,162 @@
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg1Color"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/item_img_block"
+        android:background="@color/bg1Color">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:maxHeight="300dp"
+            android:id="@+id/item_image1"
+            android:layout_gravity="top|center_vertical"
+            android:src="@drawable/w360h360"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg3Color"
+        android:elevation="2dp">
+
+        <RelativeLayout
+            android:id="@+id/item_info_block1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp">
+
+            <RelativeLayout
+                android:id="@+id/item_info_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="40dp">
+                <TextView
+                    android:id="@+id/item_info_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textAppearance="@style/ut_subheader"
+                    android:textColor="@color/secondaryColor"
+                    android:text="商品名稱"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="5dp"
+                    android:lineSpacingExtra="1dp"/>
+
+                <TextView
+                    android:id="@+id/item_info_feature"
+                    android:layout_width="match_parent"
+                    android:layout_height="31dp"
+                    android:textAppearance="@style/ut_caption"
+                    android:textColor="@color/thirdColor"
+                    android:text="商品特色"
+                    android:layout_below="@+id/item_info_name"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="5dp"
+                    android:lineSpacingExtra="1dp"/>
+
+                <TextView
+                    android:id="@+id/item_info_salePrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/ut_body2"
+                    android:text="$8,888"
+                    android:textColor="@color/primaryColor"
+                    android:layout_below="@+id/item_info_feature"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"/>
+
+                <!-- 要加刪除線 -->
+                <TextView
+                    android:id="@+id/item_info_originalPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/ut_caption"
+                    android:text="$9,999"
+                    android:textColor="@color/thirdColor"
+                    android:layout_marginLeft="8dp"
+                    android:layout_alignBottom="@+id/item_info_salePrice"
+                    android:layout_toRightOf="@+id/item_info_salePrice"
+                    android:layout_toEndOf="@+id/item_info_salePrice" />
+
+            </RelativeLayout>
+
+            <!--追蹤商品按鈕未追蹤狀態，點擊和已追蹤時要更換為 ic_star_24dp-->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tag_icon_cart"
+                android:src="@mipmap/ic_star_outline_24dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+        <include
+            layout="@layout/border_bottom_layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:id="@+id/item_info_block2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+            <TextView
+                android:id="@+id/item_info_listTitle1"
+                android:text="規格"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/ut_body1"
+                android:textColor="@color/thirdColor"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginRight="16dp"/>
+
+            <TextView
+                android:id="@+id/item_info_listTxt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="點選確認規格"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/item_info_listTitle1"
+                android:textStyle="bold"
+                android:textAppearance="@style/ut_body1"
+                android:textColor="@color/primaryColor" />
+        </RelativeLayout>
+
+        <include
+            layout="@layout/border_bottom_layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <include
+            layout="@layout/item_info_content1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <include
+            layout="@layout/item_info_content2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>

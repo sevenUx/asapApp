@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primaryColor">#00a0ca</color>
+    <color name="secondaryColor">#212121</color>
+    <color name="thirdColor">#757575</color>
+    <color name="disabledColor">#bdbdbd</color>
+    <color name="buttonColor">#ffffff</color>
+    <color name="tagColor">#ffffff</color>
+    <color name="specialColor">#f42c46</color>
+
+    <color name="border1Color">#d9d9d9</color>
+    <color name="border2Color">#cccccc</color>
+    <color name="border3Color">#00a0ca</color>
+
+    <color name="bg1Color">#ededed</color>
+    <color name="bg2Color">#fafafa</color>
+    <color name="bg3Color">#ffffff</color>
+
+    <color name="btn1Color">#00a0ca</color>
+    <color name="btn1ColorPressed">#40b8d7</color>
+    <color name="btn2Color">#ffb400</color>
+    <color name="btn2ColorPressed">#ffc740</color>
+    <color name="btn3Color">#ff5f00</color>
+    <color name="btn3ColorPressed">#ff8740</color>
+    <color name="btnColorDisabled">#bdbdbd</color>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg2Color"
+    android:alpha="0.95"
+    android:baselineAligned="false"
+    android:elevation="4dp"
+    >
+    <include
+        layout="@layout/top_tab_block"/>
+    <include
+        layout="@layout/top_tab_block_selected"/>
+    <include
+        layout="@layout/top_tab_block"/>
+    <include
+        layout="@layout/top_tab_block"/>
+</LinearLayout>
+
+
+
+

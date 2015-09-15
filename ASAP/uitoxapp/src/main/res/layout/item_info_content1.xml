@@ -1,0 +1,135 @@
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/item_info_block3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+        <TextView
+            android:id="@+id/item_info_listTitle2"
+            android:text="活動"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/ut_body1"
+            android:textColor="@color/thirdColor"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/item_info_listTxt2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="優惠期間：05/01 20:00 ~ 05/02 20:00\n優惠價：$4990"
+            android:textAppearance="@style/ut_body1"
+            android:textColor="@color/secondaryColor"
+            android:lineSpacingExtra="2dp"/>
+    </LinearLayout>
+
+    <include
+        layout="@layout/border_bottom_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/item_info_block4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+        <TextView
+            android:id="@+id/item_info_listTitle3"
+            android:text="預購倒數"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/ut_body1"
+            android:textColor="@color/thirdColor"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/item_info_listTxt3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="倒數結束時間： 23:59:59  9999人已買"
+            android:textAppearance="@style/ut_body1"
+            android:textColor="@color/secondaryColor"
+            android:lineSpacingExtra="2dp"/>
+    </LinearLayout>
+
+    <include
+        layout="@layout/border_bottom_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/item_info_block4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+        <TextView
+            android:id="@+id/item_info_listTitle4"
+            android:text="說明"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/ut_body1"
+            android:textColor="@color/thirdColor"
+            android:layout_marginBottom="16dp"/>
+        <TextView
+            android:id="@+id/item_info_listTxt4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="會員限購1個(剩餘數量：9999)\n預計出貨日：2014/05/16\n已預訂數量：90  剩餘數量：60"
+            android:textAppearance="@style/ut_body1"
+            android:textColor="@color/secondaryColor"
+            android:lineSpacingExtra="2dp"/>
+    </LinearLayout>
+
+    <include
+        layout="@layout/border_bottom_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/item_info_block5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="0dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp">
+        <TextView
+            android:id="@+id/item_info_listTitle5"
+            android:text="加購商品"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/ut_body1"
+            android:textColor="@color/thirdColor"
+            android:paddingRight="16dp"/>
+
+        <include
+            layout="@layout/item_check_block1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/item_info_listTitle5"
+            android:text="展開"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/ut_body2"
+            android:textColor="@color/primaryColor"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:gravity="right" />
+    </LinearLayout>
+
+    <include
+        layout="@layout/border_bottom_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

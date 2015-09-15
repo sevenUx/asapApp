@@ -1,0 +1,63 @@
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/item_info_block3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="0dp"
+        android:paddingLeft="0dp"
+        android:paddingTop="16dp">
+        <TextView
+            android:id="@+id/item_info_listTitle2"
+            android:text="相關商品"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/ut_body1"
+            android:textColor="@color/thirdColor"
+            android:layout_marginBottom="16dp"
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp"/>
+        <include
+            android:id="@+id/h_Scroll_view1"
+            layout="@layout/h_scroll_view1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <include
+        layout="@layout/tri_tab_menu"
+        android:id="@+id/tri_tab_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:id="@+id/item_info_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="24dp"
+        android:paddingBottom="24dp"
+        android:background="@drawable/border_bottom">
+
+        <TextView
+            android:id="@+id/item_info_detailTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="商品內容詳細說明"
+            android:textAppearance="@style/ut_body1"
+            android:textColor="@color/secondaryColor"
+            android:lineSpacingExtra="3dp"/>
+    </RelativeLayout>
+
+    <include
+        layout="@layout/item_float_buy"
+        android:id="@+id/item_float_buy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

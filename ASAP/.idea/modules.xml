@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ASAP.iml" filepath="$PROJECT_DIR$/ASAP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/entity/entity.iml" filepath="$PROJECT_DIR$/entity/entity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/uitoxapp/uitoxapp.iml" filepath="$PROJECT_DIR$/uitoxapp/uitoxapp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/uitoxlibrary/uitoxlibrary.iml" filepath="$PROJECT_DIR$/uitoxlibrary/uitoxlibrary.iml" />
+    </modules>
+  </component>
+</project>

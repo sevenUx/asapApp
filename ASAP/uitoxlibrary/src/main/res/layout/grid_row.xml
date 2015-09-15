@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 圖 -->
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/ProductImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="8dp" />
+
+    <!-- 商品名稱 -->
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ProductImage"
+        android:layout_toRightOf="@+id/ProductImage"
+        android:textSize="@dimen/title"
+        android:textStyle="bold"
+        android:maxWidth="150dp"/>
+
+    <!-- 描述 -->
+    <TextView
+        android:id="@+id/Describe"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Title"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/ProductImage"
+        android:textSize="@dimen/rating" />
+
+    <!-- 原價 -->
+    <TextView
+        android:id="@+id/OrgPrice"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Describe"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/ProductImage"
+        android:textColor="@color/genre"
+        android:textSize="@dimen/genre" />
+
+    <!-- 特價-->
+    <TextView
+        android:id="@+id/RelPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/OrgPrice"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/ProductImage"
+        android:textColor="@color/year"
+        android:textSize="@dimen/year" />
+
+    <Button
+        android:id="@+id/btnCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="搶購"
+        android:layout_below="@id/RelPrice"/>
+
+</LinearLayout>

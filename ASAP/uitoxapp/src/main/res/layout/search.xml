@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg1Color">
+    <include
+        layout="@layout/item_sort"
+        android:id="@+id/item_sort"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"/>
+    <RelativeLayout
+        android:id="@+id/item_list_block3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg3Color"
+        android:elevation="2dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="5dp"
+            android:id="@+id/search_info">
+            <TextView
+                android:text="目前顯示的搜尋結果：關鍵字共計71筆"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/search_info_text1"
+                android:layout_centerVertical="true"
+                android:textAppearance="@style/ut_caption"
+                android:textColor="@color/thirdColor" />
+        </RelativeLayout>
+
+        <include
+            layout="@layout/item_list2"
+            android:id="@+id/item_list2"
+            android:layout_below="@+id/search_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+</LinearLayout>

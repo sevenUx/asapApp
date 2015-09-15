@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg1Color">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:id="@+id/activity_info"
+        android:background="@color/bg3Color"
+        android:elevation="2dp">
+
+        <RelativeLayout
+            android:id="@+id/activity_info_content1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center_vertical|center"
+            android:background="@color/specialColor">
+            <TextView
+                android:text="限時特賣中"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/activity_info_txt1"
+                android:layout_centerVertical="true"
+                android:textAppearance="@style/ut_subheader"
+                android:textColor="@color/tagColor"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/activity_info_content1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center_vertical|center"
+            android:background="@color/thirdColor">
+            <TextView
+                android:text="特賣即將開始"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/activity_info_txt1"
+                android:layout_centerVertical="true"
+                android:textAppearance="@style/ut_subheader"
+                android:textColor="@color/tagColor"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/activity_info_content2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/border_bottom">
+
+            <TextView
+                android:id="@+id/activity_info_c2_txt1"
+                android:text="活動主題"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/ut_subheader"
+                android:textColor="@color/secondaryColor"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/activity_info_c2_txt2"
+                android:text="2014/02/27 00:00 ~ 2014/03/08 00:00"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/ut_body1"
+                android:textColor="@color/primaryColor"
+                android:layout_below="@+id/activity_info_c2_txt1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/activity_info_content3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp">
+
+            <TextView
+                android:id="@+id/activity_info_c3_txt1"
+                android:text="活動標題"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/ut_subheader"
+                android:textColor="@color/secondaryColor"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/activity_info_c3_txt2"
+                android:text="活動說明"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/ut_body1"
+                android:textColor="@color/thirdColor"
+                android:layout_below="@+id/activity_info_c3_txt1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/item_sort"
+        android:id="@+id/item_sort"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"/>
+    <RelativeLayout
+        android:id="@+id/item_list_block3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg3Color"
+        android:paddingTop="16dp"
+        android:elevation="2dp">
+        <include
+            layout="@layout/item_list2"
+            android:id="@+id/item_list2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+</LinearLayout>

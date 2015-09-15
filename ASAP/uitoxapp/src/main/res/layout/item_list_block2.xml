@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    android:layout_weight="1">
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:id="@+id/listImg1"
+        android:src="@drawable/w360h360"
+        android:layout_marginBottom="5dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:textAppearance="@style/ut_body1"
+        android:textColor="@color/secondaryColor"
+        android:text="商品名稱"
+        android:layout_marginBottom="3dp"
+        android:id="@+id/itemSpecName"
+        android:layout_below="@+id/listImg1"
+        android:lineSpacingExtra="2dp"/>
+
+    <!-- 要加刪除線 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/ut_caption"
+        android:text="$9,999"
+        android:layout_marginBottom="2dp"
+        android:id="@+id/itemSpecPrice2"
+        android:layout_below="@+id/itemSpecName"
+        android:textColor="@color/thirdColor" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/ut_body2"
+        android:text="$8,888"
+        android:id="@+id/itemSpecPrice"
+        android:layout_below="@+id/itemSpecPrice2"
+        android:textColor="@color/primaryColor" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/ut_body2"
+        android:text="搶購"
+        android:id="@+id/listText4"
+        android:layout_alignBottom="@+id/itemSpecPrice"
+        android:layout_alignRight="@+id/listImg1"
+        android:layout_alignEnd="@+id/listImg1"
+        android:textColor="@color/primaryColor"/>
+
+</RelativeLayout>

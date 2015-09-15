@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">uitoxAPP</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!--賣場按鈕文字-->
+    <string name="buytxt_addCart">加入購物車</string>
+    <string name="buytxt_seleSize">請選擇尺寸</string>
+    <string name="buytxt_preOrder">立刻預訂</string>
+    <string name="buytxt_rush">立即搶購</string>
+    <string name="buytxt_discount">買立折</string>
+    <string name="buytxt_toSale">即將開賣</string>
+    <string name="buytxt_soldoutStock">售完補貨中</string>
+    <string name="buytxt_preorderFinish">預購結束</string>
+    <string name="buytxt_soldout">已售完</string>
+    <string name="buytxt_rushFinish">搶購一空</string>
+    <string name="title_activity_search_view">搜尋</string>
+    <string name="title_activity_search_page">SearchPage</string>
+    <string name="title_activity_home_page">HomePage</string>
+    <string name="title_activity_category">Category</string>
+    <string name="title_activity_category_page">CategoryPage</string>
+    <string name="title_activity_navigation_drawer_fragment_view">NavigationDrawerFragmentView</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+</resources>

@@ -1,0 +1,93 @@
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg1Color"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/index_mainImg_block"
+        android:background="@color/bg1Color">
+
+        <!-- 圖寬要滿版 -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/index_mainImage1"
+            android:layout_gravity="top|center_vertical"
+            android:src="@mipmap/w1220h550"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg3Color"
+        android:elevation="2dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:id="@+id/relativeLayout">
+
+            <TextView
+                android:text="整點特賣"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/index_ontime_text1"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentStart="false"
+                android:layout_alignWithParentIfMissing="false"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:textAppearance="@style/ut_body2"
+                android:textColor="@color/thirdColor" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="05 : 30 : 26"
+                android:id="@+id/index_ontime_text2"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/index_ontime_text1"
+                android:layout_alignParentStart="false"
+                android:textStyle="bold"
+                android:textAppearance="@style/ut_body2"
+                android:textColor="@color/primaryColor" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="more"
+                android:id="@+id/index_ontime_text3"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:textAppearance="@style/ut_body2"
+                android:textColor="@color/thirdColor" />
+
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/h_Scroll_view1"
+            layout="@layout/h_scroll_view1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <include
+            android:id="@+id/item_list1"
+            layout="@layout/item_list1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>
